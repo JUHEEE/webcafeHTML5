@@ -2,6 +2,15 @@
 html, body{
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
+body{
+  color: #000;
+  background-color: #CCC;
+}
+/* 링크스타일 */
+a{
+  text-decoration: none;
+  color: inherit;
+}
 /* 박스 사이징 재정의 */
 *,*::before, *::after{
     box-sizing: border-box;
@@ -13,12 +22,46 @@ margin: 0 auto;
 }
 /* 헤더 */
 .header{
-  background-color: yellow;
-  height: 10vh;
+  background-color: white;
+  position:relative;
+  padding: 0 30px;
+  height: 120px;
+  border-radius: 0 0 15px 15px;
 }
+/* 로고 */
+.logo{
+  margin: 0;
+  font-size:1em;
+  position:absolute;
+  top:45px;
+  left:60px;
+}
+.logo a{
+  display: block;
+}
+.logo img{
+  vertical-align: top;
+}
+/* 멤버 서비스 링크 */
+.member-service{
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: right;
+  transform: translateX(10px);
+}
+.member-service li{
+  display: inline-block;
+  padding:4px 0;
+  text-transform: uppercase;
+}
+.member-service a{
+  display: inline-block;
+  padding: 6px 10px;
+}
+
 /* 비쥬얼 */
 .visual{
-  background-color: orange;
   height: 10vh;
 }
 /* 메인콘텐츠 */
@@ -33,7 +76,6 @@ margin: 0 auto;
 } */
 /* Float를 활용한 메인콘텐츠 배치 */
 .main{
-  background-color: blue;
   display: flow-root;
   min-height: 450px;
   padding: 30px 15px;
@@ -49,30 +91,22 @@ margin: 0 15px;
 float: left;
 }
 .group1{
-background-color: pink;
 width: 250px;
 float: right;
 }
 .group2{
-  background-color: lime;
   width: 380px;
 }
 .group3{
-  background-color: salmon;
   width: 190px;
 }
 
 /* 슬로건 */
 .slogan{
-  background-color: aqua;
   height: 10vh;
 }
 /* 푸터 */
 .footer-inner{
-  background-color: purple;
   height: 10vh;
   width: 100%;
-}
-.logo{
-  margin: 0;
 }
