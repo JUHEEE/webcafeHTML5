@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>웹카페</title>
-  <link rel="stylesheet" href="./css/normalize.css" >
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.5/dist/web/static/pretendard-dynamic-subset.css" />
+  <link rel="stylesheet" href="./css/normalize.css" >
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -15,13 +15,35 @@
     <a href="./index.html">
       <img src="./assets/logo.png" alt="web cafe">
     </a>
-   </h1>
+  </h1>
+   <ul class="member-service">
+     <li>
+         <a href="/">홈</a>
+     </li>
+     <li>
+       <span aria-hidden="true">:</span>
+         <a href="/">로그인</a>
+     </li>
+     <li>
+       <span aria-hidden="true">:</span>
+         <a href="/">회원가입</a>
+     </li>
+     <li>
+       <span aria-hidden="true">:</span>
+         <a href="/">사이트맵</a>
+     </li>
+     <li>
+       <span aria-hidden="true">:</span>
+         <a href="/">english</a>
+     </li>
+   </ul>
   </header>
   <div class="visual">비쥬얼</div>
-  <main class="main">
+  <main class="main clearfix"> 
     <div class="group group1">group1</div>
     <div class="group group2">group2</div>
     <div class="group group3">group3</div>
+    <!-- <div class="clearfix"></div> -->
   </main>
   <article class="slogan">슬로건</article>
   <footer class="footer">

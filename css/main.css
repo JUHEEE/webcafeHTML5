@@ -22,20 +22,36 @@ margin: 0 auto;
   height: 10vh;
 }
 /* 메인콘텐츠 */
-.main{
+/* Flex를 활용한 메인콘텐츠 배치 */
+/* .main{
   background-color: blue;
   height: 60vh;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   padding:30px ;
+} */
+/* Float를 활용한 메인콘텐츠 배치 */
+.main{
+  background-color: blue;
+  display: flow-root;
+  min-height: 450px;
+  padding: 30px 15px;
 }
+/* .clearfix::after{
+  background-color: red;
+  content: "";
+  clear: both;
+  display: block;
+} */
 .group{
-  
+margin: 0 15px;
+float: left;
 }
 .group1{
 background-color: pink;
 width: 250px;
+float: right;
 }
 .group2{
   background-color: lime;
@@ -45,6 +61,7 @@ width: 250px;
   background-color: salmon;
   width: 190px;
 }
+
 /* 슬로건 */
 .slogan{
   background-color: aqua;
@@ -56,7 +73,6 @@ width: 250px;
   height: 10vh;
   width: 100%;
 }
-
 .logo{
   margin: 0;
 }
