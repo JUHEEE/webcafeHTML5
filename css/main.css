@@ -86,8 +86,8 @@ a{
   padding: 10px;
 }
 
-.spacing-md{
-  padding: 15px;
+.gap-top-md{
+  margin-top: 20px;
 }
 
 .accent-color{
@@ -685,19 +685,24 @@ a{
   right: -8px;
   padding: 8px;
 }
+
 /* 신규이벤트 */
 .event{
   border-bottom: 1px solid #999;
 }
+
 .event-title{
   float: left;
 }
+
 .event-button{
   display: flex;
-  flex-flow: nowrap;
+  flex-flow:row nowrap;
   justify-content: flex-end;
-  /* gap:5px; */
+  /* gap: 5px; */
 }
+
+/* .event-button-prev, .event-button-next */
 .event-button button{
   width: 19px;
   height: 18px;
@@ -705,35 +710,43 @@ a{
   border: 0;
   background: url(./images/back_forward.png);
 }
+
 .event-button-prev{
   margin-right: 5px;
 }
+
 .event-button-next{
   background-position: -36px 0 !important;
 }
+
 .event-thumbnail, .event-brief{
   margin: 10px 0;
 }
+
 .event-thumbnail img{
   box-shadow: 5px 5px 0 0 #999;
 }
+
 /* 관련사이트 */
 .related{
   padding-top: 10px;
 }
+
 .related-list{
   margin-top: 10px;
   background-color: #fff;
-  border:1px solid #aaa;
+  border: 1px solid #aaa;
   border-radius: 5px;
   height: 27px;
   overflow: hidden;
   transition: height 250ms, padding 250ms 250ms;
 }
+
 .related-list:hover, .related-list:focus{
   height: 147px;
   padding: 10px 0;
 }
+
 .related-list li{
   height: 25px;
   padding: 4px;
@@ -741,10 +754,15 @@ a{
   flex-flow: row nowrap;
   align-items: center;
 }
+
 .related-list a{
-  flex: 1 1 100%;
+  /* display: block; */
+  flex: 0 0 100%;
   padding: 0 15px;
 }
+
+
+
 /* 슬로건 */
 .slogan{
   height: 10vh;
